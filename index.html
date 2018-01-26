@@ -1,0 +1,106 @@
+<?php
+	session_start();
+	
+	$Email = $_SESSION['email'];
+	echo $Email;
+?>
+<html>
+<!-- Group 3 -->
+<title> Paradise of the Seas! </title>
+<style type = "text/css">
+body
+{
+	margin:auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+div.nav
+{
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	overflow: auto;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	color: black;
+	font-weight: bold;
+	padding: 20px;
+}
+
+ul.nav
+{
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	width: 450px;
+}
+
+li.nav
+{
+	width: 150px;
+	float: left;
+	text-align: center;
+	color: black;
+}
+
+div.log
+{
+	margin-left: auto;
+	overflow: auto;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 175px;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	
+}
+img.ship
+{
+	border: 40px solid rgba(255, 255, 255, 0.3);
+	
+}
+a:link
+{
+	text-decoration: none;
+}
+a:visited
+{
+	color: black;
+}
+
+</style>
+
+<body background = "beach.png">
+
+<div align = "right" class = "log">
+		<a href="logIn.php">Log In /</a>
+		<a href="signUp.php">Create Account</a>
+	</div>
+
+
+<h1 align = "center"><b><strong><font size = "7">Paradise of the Seas</font></strong></b></h1>
+
+<br>
+
+<div class = "nav">
+	<ul class = "nav">
+		<li class = "nav"><a href = "search.php"> Search</a></li>
+		<li class = "nav"><a href = ""> Deals</a></li>
+		<li class = "nav"><a href = ""> Support </a></li>
+	</ul>
+</div>
+
+<br>
+
+<center>
+<img src="ship.png" alt="Our most popular ship!" height="824" width="1024" class = "ship">
+</center>
+
+<br/>
+
+</body>
+</html>
