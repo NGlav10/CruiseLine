@@ -167,7 +167,7 @@ input[type = submit].book
 	<!-- Select Departing Date -->
 	<select name = "departingDate" id = "departingDate" align = "center">
 		<option selected hidden style = 'display: none' value = "0">Departure Date</option>
-		<?PHP			
+<!--		<?PHP			
 			$hostname = "students";
 			$username = "cs566103";
 			$password = "GGgH9dH9H";
@@ -196,12 +196,12 @@ input[type = submit].book
 				echo "<option value='" . $row[0] . "'>" . $row[0] . "</option>";
 			}
 		?>
-	</select>
+-->	</select>
 	
 	<!-- Select Departing From -->
 	<select name = "departingFrom" id = "departingFrom"> 
 		<option selected hidden style = 'display: none' value = "0" align = "center">Departing From</option>
-		<?PHP
+<!--		<?PHP
 			// SQL statement
 			$sql = "SELECT DepartingFrom FROM Itinerary ORDER BY DepartingFrom";
 	
@@ -217,13 +217,13 @@ input[type = submit].book
 			{
 				echo "<option value='" . $row[0] . "'>" . $row[0] . "</option>";
 			}
-		?>
+-->		?>
 	</select>
 
 	<!-- Select Destination -->
 	<select name = "destination" id = "destination">
 		<option selected hidden style = 'display: none' value = "0">Destination</option>
-		<?PHP
+<!--		<?PHP
 			// MySQL statement
 			$sql = "SELECT Destination from Itinerary ORDER BY Destination";
 	
@@ -239,13 +239,14 @@ input[type = submit].book
 				echo "<option value='" . $row[0] . "'>" . $row[0] . "</option>";
 			}			
 		?>
-	</select>
+-->	</select>
 
 	<input type="submit" class = "searchCruises" name = "doSearch" value = "Search Cruises">
 </form>
 
 <br>
 
+<!--
 <?php
 if ($_POST['doSearch'] == "Search Cruises")
 {
@@ -346,6 +347,7 @@ if ($_POST['doSearch'] == "Search Cruises")
 	mysqli_close($conn);
 
 ?>
+-->
 
 </body>
 </html>
