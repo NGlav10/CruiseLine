@@ -1,2 +1,2 @@
 # CruiseLine
-Create a cruise line website and connect to an SQL database
+Create a website for a cruise line that integrates a MySQL database
